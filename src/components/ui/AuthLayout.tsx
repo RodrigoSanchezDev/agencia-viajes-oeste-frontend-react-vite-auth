@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import type { FC, ReactNode } from 'react';
 import './AuthLayout.css';
 
 interface AuthLayoutProps {
@@ -7,7 +7,7 @@ interface AuthLayoutProps {
   subtitle?: string;
 }
 
-export const AuthLayout: React.FC<AuthLayoutProps> = ({ children, title, subtitle }) => {
+export const AuthLayout: FC<AuthLayoutProps> = ({ children, title, subtitle }) => {
   return (
     <div className="auth-layout">
       <div className="auth-layout__card">

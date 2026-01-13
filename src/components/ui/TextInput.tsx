@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from 'react';
+import type { FC, InputHTMLAttributes } from 'react';
 import './TextInput.css';
 
 interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -7,7 +7,7 @@ interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
   helperText?: string;
 }
 
-export const TextInput: React.FC<TextInputProps> = ({
+export const TextInput: FC<TextInputProps> = ({
   label,
   error,
   helperText,

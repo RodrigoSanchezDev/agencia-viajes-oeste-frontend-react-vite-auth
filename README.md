@@ -57,30 +57,50 @@ Demostrar la implementación de un flujo de autenticación moderno y seguro, apl
 <div align="center">
 
 ```mermaid
-mindmap
-  root((Viajes Oeste))
-    Autenticación
-      Login con Email
-      Código 6 dígitos
-      Verificación Magic Link
-      Registro de usuarios
-      Logout seguro
-    UI/UX Moderno
-      Diseño Split Screen
-      Animaciones CSS
-      Responsive Design
-      Dark Theme Ready
-      Iconografía React Icons
-    Seguridad
-      Tokens JWT
-      Rate Limiting
-      Validación de usuarios
-      Rutas protegidas
-    Arquitectura
-      Feature-based
-      TypeScript strict
-      Custom Hooks
-      Services Layer
+%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#6366f1', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#818cf8', 'lineColor': '#a5b4fc', 'secondaryColor': '#1e1b4b', 'tertiaryColor': '#312e81'}}}%%
+flowchart TB
+    subgraph AUTH["🔐 Autenticación"]
+        A1[Login con Email]
+        A2[Código 6 dígitos]
+        A3[Magic Link]
+        A4[Registro]
+        A5[Logout seguro]
+    end
+    
+    subgraph UI["🎨 UI/UX Moderno"]
+        B1[Split Screen]
+        B2[Animaciones CSS]
+        B3[Responsive]
+        B4[Dark Theme Ready]
+        B5[React Icons]
+    end
+    
+    subgraph SEC["🛡️ Seguridad"]
+        C1[Tokens JWT]
+        C2[Rate Limiting]
+        C3[Validación usuarios]
+        C4[Rutas protegidas]
+    end
+    
+    subgraph ARCH["🏗️ Arquitectura"]
+        D1[Feature-based]
+        D2[TypeScript strict]
+        D3[Custom Hooks]
+        D4[Services Layer]
+    end
+    
+    CENTER((🌍 Viajes Oeste))
+    
+    CENTER --> AUTH
+    CENTER --> UI
+    CENTER --> SEC
+    CENTER --> ARCH
+    
+    style CENTER fill:#6366f1,stroke:#a5b4fc,stroke-width:3px,color:#fff
+    style AUTH fill:#059669,stroke:#34d399,color:#fff
+    style UI fill:#db2777,stroke:#f472b6,color:#fff
+    style SEC fill:#0891b2,stroke:#22d3ee,color:#fff
+    style ARCH fill:#d97706,stroke:#fbbf24,color:#fff
 ```
 
 </div>

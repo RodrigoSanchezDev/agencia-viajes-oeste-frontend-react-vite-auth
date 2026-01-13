@@ -1,9 +1,9 @@
 // HTTP Client configuration - Axios + ReqRes Magic Link
 import axios from 'axios';
 
-// Configuración de ReqRes con tu proyecto
-export const PROJECT_ID = '1585';
-export const API_KEY = 'pub_67b1ab9521448700465fdc0af676157c3c8582d2fe3fb424af61cd69c42a5392';
+// Configuración de ReqRes - Variables de entorno
+export const PROJECT_ID = import.meta.env.VITE_REQRES_PROJECT_ID || '1585';
+export const API_KEY = import.meta.env.VITE_REQRES_API_KEY || 'pub_67b1ab9521448700465fdc0af676157c3c8582d2fe3fb424af61cd69c42a5392';
 
 // Instancia de Axios configurada para ReqRes App Users (Magic Link)
 const apiClient = axios.create({
